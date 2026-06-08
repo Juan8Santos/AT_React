@@ -2,7 +2,7 @@ import styles from "./Navbar.module.css"
 import SideBarMenu from "../sideBarMenu/SideBarMenu";
 import { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
-import LogoLavarel from "../../assets/Laravel.svg.png"
+import LogoLavarel from "../../../assets/Laravel.svg.png"
 
 export default function Navbar() {
 
