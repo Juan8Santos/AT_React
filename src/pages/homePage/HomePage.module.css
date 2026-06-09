@@ -1,0 +1,17 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    border: 1px solid var(--border);
+    border-left: 10px solid var(--theme-color);
+    align-self: center;
+    margin-top: 150px;
+}

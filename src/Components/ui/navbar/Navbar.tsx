@@ -4,17 +4,11 @@ import { useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import LogoLavarel from "../../../assets/Laravel.svg.png"
 
+import { optionsSideBar } from "../../../mocks/routes.mock";
+
 export default function Navbar() {
 
     const [menu, setMenu] = useState<boolean>(false)
-
-    const optionsSideBar = [
-        {name: "Início", route:"/"},
-        {name: "Registrar usuário", route:"/auth"}, 
-        {name: "Gerenciar usuários", route:"/manage"},
-        {name: "Contato", route:""},
-        {name: "Ajuda", route:""}
-    ]
 
     return (
         <nav className={styles.navbarStyle}>

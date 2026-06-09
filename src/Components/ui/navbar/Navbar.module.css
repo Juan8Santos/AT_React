@@ -16,4 +16,5 @@
     height: 30px;
     width: 30px;
     color: var(--text);
+    cursor: pointer;
 }
