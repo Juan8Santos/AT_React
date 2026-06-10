@@ -1,10 +1,18 @@
 import Navbar from "../../Components/ui/navbar/Navbar";
+import Exercicio9 from "../../Components/common/exercicio9/Exercicio9";
+import type { DadosFormulario } from "../../types/dadosFormularioTypes";
 
-export default function PageExercicio9() {
+interface Props {
+    dadosIniciais?: DadosFormulario;
+}
+
+export default function PageExercicio9({ dadosIniciais }: Props) {
     return (
         <div>
             <Navbar />
-            <h1>Page Exercicio 9</h1>
+            <div className="page">
+                <Exercicio9 dadosIniciais={dadosIniciais} />
+            </div>
         </div>
-    )
+    );
 }

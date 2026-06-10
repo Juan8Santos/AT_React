@@ -1,14 +1,17 @@
 import Navbar from "../../Components/ui/navbar/Navbar";
 import Exercicio5 from "../../Components/common/exercicio5/Exercicio5";
-import styles from "./PageExercicio5.module.css";
 
-export default function PageExercicio5() {
+interface Props {
+    valorInicial?: boolean;
+}
+
+export default function PageExercicio5({ valorInicial }: Props) {
     return (
         <div>
             <Navbar />
-            <div className={styles.page}>
-                <Exercicio5 />
+            <div className="page">
+                <Exercicio5 valorInicial={valorInicial} />
             </div>
         </div>
-    )
+    );
 }

@@ -4,9 +4,13 @@ import styles from "./Exercicio6.module.css";
 
 import type { Paises } from "../../../types/paisesTypes";
 
-export default function Exercicio6() {
+interface Props {
+    paisInicial?: string;
+}
+
+export default function Exercicio6({ paisInicial = "" }: Props) {
     const [paises, setPaises] = useState<Paises[]>([]);
-    const [paisEscolhido, setPaisEscolhido] = useState<string>("");
+    const [paisEscolhido, setPaisEscolhido] = useState<string>(paisInicial);
 
     useEffect(() => {
         async function carregarPaises() {
@@ -33,7 +37,7 @@ export default function Exercicio6() {
     return (
         <div className={styles.container}>
             <h1>Exercicio 6</h1>
-            <select className={styles.selectInput} onChange={(e) => setPaisEscolhido(e.target.value)}>
+            <select className={styles.selectInput} onChange={(e) => setPaisEscolhido(e.target.value)} value={paisEscolhido}>
                 <option value="">Selecione um país</option>
                 {paises.map((country) => (
                     <option key={country.cca3}>

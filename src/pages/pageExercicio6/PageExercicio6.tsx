@@ -1,14 +1,17 @@
 import Exercicio6 from "../../Components/common/exercicio6/Exercicio6";
 import Navbar from "../../Components/ui/navbar/Navbar";
-import styles from "./PageExercicio6.module.css";
 
-export default function PageExercicio6() {
+interface Props {
+    paisInicial?: string;
+}
+
+export default function PageExercicio6({ paisInicial }: Props) {
     return (
         <div>
             <Navbar />
-            <div className={styles.page}>
-                <Exercicio6 />
+            <div className="page">
+                <Exercicio6 paisInicial={paisInicial} />
             </div>
         </div>
-    )
+    );
 }

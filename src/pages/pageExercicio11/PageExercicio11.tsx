@@ -1,10 +1,13 @@
+import Exercicio11 from "../../Components/common/exercicio11/Exercicio11";
 import Navbar from "../../Components/ui/navbar/Navbar";
 
 export default function PageExercicio11() {
     return (
         <div>
             <Navbar />
-            <h1>Page Exercicio 11</h1>
+            <div className="page">
+                <Exercicio11 />
+            </div>
         </div>
     )
 }

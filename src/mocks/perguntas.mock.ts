@@ -1,9 +1,4 @@
-type PerguntaEResposta = {
-    pergunta: string;
-    resposta: string;
-    numExercicio: number;
-}
-
+import type { PerguntaEResposta } from "../types/perguntasTypes"
 
 export const perguntas: PerguntaEResposta[] = [
     {

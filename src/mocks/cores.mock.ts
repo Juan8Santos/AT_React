@@ -1,4 +1,4 @@
-export const mockCores = [
+export const mockCores:string[] = [
   "#FF0000",
   "#00FF00",
   "#0000FF",
